@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    font-size: 35px;
+    font-family: 'Tourney', cursive;
+}
+
+.carGame{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images_audio/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hide{
+    display: none;
+}
+
+.car, .enemyCar{
+    height: 110px;
+    width: 50px;
+    position: absolute;
+    bottom: 120px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 17px;
+}
+
+.gamearea{
+    position: relative;
+    width: 450px;
+    height: 100vh;
+    background-color: black;
+    margin: auto;
+    overflow: hidden;
+    border-left: 7px dashed white;
+    border-right: 7px dashed white;
+}
+
+.lines{
+    width: 10px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    margin-left: 215px;
+}
+
+.score{
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    width: 300px;
+    background-color: blueviolet;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 5px 15px blueviolet;
+    border-radius: 20px;
+}
+
+.max-score{
+    position: absolute;
+    top: 15px;
+    left: 1080px;
+    width: 400px;
+    line-height: 50px;
+    background-color: darkblue;
+    height: 50px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px 15px rgb(49, 49, 190);
+    border-radius: 20px;
+}
+
+.popup{
+    background-color: rgb(238, 58, 58);
+    position: absolute;
+    height: 150px;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    text-align: center;
+    line-height: 135px;
+    color: white;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 15px rgb(241, 129, 129);
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 1s;
+}
+
+.popup:hover{
+    background-color: rgb(233, 40, 40);
+    box-shadow: 0 5px 15px rgb(230, 92, 92);
+    transition-duration: 0.5s;
+}
